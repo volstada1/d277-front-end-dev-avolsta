@@ -1,0 +1,627 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #1e6f54;
+  --light-color: #f4f4f6;
+  --dark-color: #006699;
+}
+
+body {
+  font-family: 'Faustina', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  padding-left: 30px;
+  list-style: upper-alpha;
+}
+
+img {
+  max-width: 100%;
+}
+
+em {
+  color: rebeccapurple;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 10px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+/*---------------------------------------------------*/
+/*This will also apply to the main menu*/
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar ul li a:hover {
+  background-color: #292929;
+  color: var(--light-color);
+  border-radius: 10px;
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
+/*---------------------------------------------------*/
+/* Hero */
+.hero-main {
+  background-image: linear-gradient(rgba(248, 249, 252, 0.3), rgba(248, 249, 252, 0.3)), url('../images/kentucky-banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+.hero-second {
+  background-image: linear-gradient(rgba(248, 249, 252, 0.4), rgba(248, 249, 252, 0.4)), url('../images/frankfort-banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+.hero-third {
+  background-image: linear-gradient(rgba(248, 249, 252, 0.4), rgba(248, 249, 252, 0.4)), url('../images/lexington-banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px; 
+}
+
+.hero-fourth {
+  background-image: linear-gradient(rgba(248, 249, 252, 0.5), rgba(248, 249, 252, 0.5)), url('../images/louisville-banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;  
+}
+
+.hero-fifth {
+  background-image: linear-gradient(rgba(248, 249, 252, 0.3), rgba(248, 249, 252, 0.3)), url('../images/natural-bridge-banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;  
+}
+
+.hero-main .hero-content, 
+.hero-second .hero-content,
+.hero-third .hero-content,
+.hero-fourth .hero-content, 
+.hero-fifth .hero-content{
+  width: 70%;
+  color: #000;
+  text-align: center;
+}
+
+.hero-main .hero-heading, 
+.hero-second .hero-heading,
+.hero-third .hero-heading,
+.hero-fourth .hero-heading,
+.hero-fifth .hero-heading {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+
+.hero-main .hero-text, 
+.hero-second .hero-text,
+.hero-third .hero-text,
+.hero-fourth .hero-text,
+.hero-fifth .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 51%;
+  transform: translate(-55%, -51%);
+}
+
+/*---------------------------------------------------*/
+/* Intro */
+.intro {
+  padding: 10px 0 60px;
+  display: inline-block;
+  width: 100%;
+}
+
+.intro-content .floatleft {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+
+.intro-content .floatright {
+  width: 50%;
+  float: right;
+  padding: 0 20px;
+}
+
+.intro-content aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+/*---------------------------------------------------*/
+/* Testimonials */
+
+.flashcards {
+  padding: 40px 0;
+}
+
+.flashcards .flashcards-heading {
+  width: 700px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.flashcards .flashcards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.flashcards .card p:nth-child(2) {
+  margin-top: 30px;
+}
+
+.flashcards .card ul {
+  padding-left: 20px;
+}
+
+/*---------------------------------------------------*/
+/* Pricing */
+
+.web-table table {
+  border: 2px solid rgb(41, 41, 42);
+  margin: 3rem;
+  align-items: center;
+  width: 90%;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 5px;
+}
+
+/*---------------------------------------------------*/
+/* Location */
+.location {
+  width: 100%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+/*---------------------------------------------------*/
+/* Contact Us */
+.contact-us {
+  width: 100%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+  color: var(--dark-color);
+  font-size: 28px;
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.contact-col div p {
+  padding: 0;
+}
+
+.contact-col div h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+.contact-col input, 
+.contact-col textarea {
+  display: flex;
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+/*---------------------------------------------------*/
+/* Footer */
+.footer {
+  padding: 50px 0;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer i {
+  position: relative;
+  top: -5px;
+  left: 15px;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+/*---------------------------------------------------*/
+/* Utility Classes */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*---------------------------------------------------*/
+/* Card */
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/*---------------------------------------------------*/
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  /* opacity: 0.8; */
+  background-color: #33FFCC;
+  color: #000;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/*---------------------------------------------------*/
+/* Text Classes */
+
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+#mytitlecolor {
+  color: royalblue;
+}
+
+/*---------------------------------------------------*/
+/* Background */
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-black {
+  background: #292929;
+  color: #fff;
+}
+
+/*---------------------------------------------------*/
+/* Hamburger Button */
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/*---------------------------------------------------*/
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/*---------------------------------------------------*/
+/* Media Queries */
+@media (max-width: 960px) {
+  .hero .hero-heading {
+    font-size: 4.5rem;
+  }
+
+  .pricing table {
+    width: 85%;
+  }
+
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .navbar .main-menu {
+    display: none;
+  }
+
+  .navbar .hamburger-button {
+    display: block;
+  }
+
+  .hero {
+    /* background: url('../images/video_preview.png') no-repeat; */
+    background-size: cover;
+    /* background-size: 350px 300px; */
+    background-position: bottom;
+    height: 350px;
+  }
+
+  /* .hero .hero-content, */
+  .hero .hero-heading {
+    font-size: 4.3rem;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    width: 100%;
+  }
+
+  .hero .hero-text {
+    top: 44%;
+    left: 44%;
+    transform: translate(-44%, -44%);
+    display: block;
+    width: 100%;
+  }
+
+  .flashcards .flashcards-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .flashcards .flashcards-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flashcards table {
+    width: 80%;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid>div {
+    text-align: center;
+  }
+
+  /*---------------------------------------------------*/
+  /* Text */
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .hero-heading {
+    font-size: 4rem;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+  }
+
+  .text-xxl {
+    font-size: 2rem;
+  }
+}
